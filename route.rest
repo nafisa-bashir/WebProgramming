@@ -1,0 +1,11 @@
+GET http://localhost:3000/api/flowers
+###
+POST http://localhost:3000/api/flowers
+Content-Type: application/json
+
+{
+    "name": "Lilies",
+    "color": "white",
+    "price": "10",
+    "imageURL": "pic1.html"
+}

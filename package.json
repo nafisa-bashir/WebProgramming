@@ -1,0 +1,27 @@
+{
+  "name": "project-web-programming",
+  "version": "1.0.0",
+  "description": "A web application that connects to MongoDB for data storage and management.",
+  "main": "index.js",
+  "scripts": {
+    "devStart": "nodemon server.js"
+  },
+  "author": "Nafisa and Oumaima",
+  "license": "ISC",
+  "dependencies": {
+    "cors": "^2.8.5",
+    "ejs": "^3.1.10",
+    "express": "^4.19.2",
+    "express-ejs-layouts": "^2.5.1",
+    "mongodb": "^6.8.0",
+    "mongoose": "^8.5.2"
+  },
+  "devDependencies": {
+    "@types/cors": "^2.8.17",
+    "@types/express": "^4.17.21",
+    "@types/express-ejs-layouts": "^2.5.4",
+    "dotenv": "^16.4.5",
+    "eslint": "^9.8.0",
+    "nodemon": "^3.1.4"
+  }
+}

@@ -1,0 +1,108 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Shop</title>
+    <meta charset="utf-8">
+    <link rel="stylesheet" href="css/shop.css">
+    <script src="javascript/shop.js"></script>
+    <script src="javascript/shop2.js"></script>
+</head>
+<body >
+    <div class="navbar">
+        <span><a href="Shop.html">Shop</a></span>
+        <span><a href="Weddings-and-Events.html">Weddings and Events</a></span>
+        <span><a href="aboutUs.html">About Us</a></span>
+        <span><a href="Contact.html">Contact Us</a></span>
+        <span> <a href="checkOut.html">Check out</a></span>
+        <a href="Main-Page.html">
+            <img style="width:150px; margin-left: 125px;" src="pic/logo.png" alt="Logo" >
+        </a>
+    </div>
+    <hr style="margin-top: 130px;width:1000px">
+    <p style="color:rgb(126, 91, 27); text-align: center; font-size: 40px;"> LA ROSE <h3 style="text-align: center;font-size: 40px;color:rgb(126, 91, 27)">COLLECTION</h3></p>
+    <hr style="margin-bottom: -120px; width:1000px">
+    <br><br>
+    &nbsp; <button onclick="displayTotal()" id="displayBtn" style="font-size: 20px;;">Cart Total Price</button>
+    <span id="cartTotal"></span>
+    <br>
+    <p style="margin-top: -450px;"></p>
+    <form style="font-size: 15px;">
+        <div style = "margin-top: 500px; font-size: 50px; font-family: 'Times New Roman', Times, serif;color:rgb(66, 59, 48)"> </div>
+        
+        <p style="font-size: 25px;"><label style="margin-top: 20000px;font-size: 30px;color: rgb(146, 141, 133);"> color :</label> <br><br>
+        <input style="margin-top: 5px; " type="radio" name="a" id="c1" onclick="filter()"> Red <br>
+        <input style="margin-top: 5px;" type="radio" name="a" id="c2" onclick="filter()"> white <br>
+        <input style="margin-top: 5px; " type="radio" name="a" id="c3" onclick="filter()"> pink <br>
+        <input style="margin-top: 5px; " type="radio" name="a" id="c4" onclick="filter()"> yellow <br>
+        <input style="margin-top: 5px; " type="radio" name="a" id="c5" onclick="filter()"> all <br></p>
+    </form>
+   
+    <img style="margin-left: 150px; margin-top: -170px;" src="pic/v.PNG">
+    
+    <table style="margin-top: -710px; margin-left: 200px; border-spacing: 50px;">
+      
+        <tr id="row1">
+          <td><a href="pic1.html" ><img src="pic/p1.png" height="500px" id="pic1"></a><br>
+            <div><button onclick="addToCart('b1')" id="b1">Add to Cart<br><div>229 AED</div></button>
+            <button onclick="removeFromCart('b1')" id="r1" style="visibility: hidden;width:100px;margin-top: 2px;">Remove</button></div></td>
+
+          <td><a href="pic2.html"><img src="pic/p2.png" height="500px" id="pic2"></a><br>
+           <div><button onclick="addToCart('b2')"  id="b2">Add to Cart <br><div>127 AED</div></button>
+           <button onclick="removeFromCart('b2')" id="r2" style="visibility: hidden;width:100px;margin-top: 2px;">Remove</button></div></td>
+
+          <td><a href="pic3.html"><img src="pic/p3.png" height="500px" id="pic3"></a><br>
+            <div><button onclick="addToCart('b3')"  id="b3">Add to Cart <br><div>150 AED</div></button>
+            <button onclick="removeFromCart('b3')" id="r3" style="visibility: hidden;width:100px;margin-top: 2px;">Remove</button></div></td>
+        </tr>
+        <tr id="row2">
+          <td><a href="pic4.html"><img src="pic/p9.png" height="500px" id="pic4"></a><br>
+            <div><button onclick="addToCart('b4')"  id="b4">Add to Cart <br><div>250 AED</div></button>
+            <button onclick="removeFromCart('b4')" id="r4" style="visibility: hidden;width:100px;margin-top: 2px;">Remove</button></div></td>
+
+          <td><a href="pic5.html"><img src="pic/p10.png" height="500px" id="pic5"></a><br>
+         <div>   <button onclick="addToCart('b5')"  id="b5">Add to Cart <br><div>310 AED</div></button>
+            <button onclick="removeFromCart('b5')" id="r5" style="visibility: hidden;width:100px;margin-top: 2px;">Remove</button></div></td></td>
+
+          <td><a href="pic6.html"><img src="pic/p11.png" height="500px" id="pic6"></a><br>
+           <div> <button onclick="addToCart('b6')"  id="b6">Add to Cart <br><div>170 AED</div></button>
+          <button onclick="removeFromCart('b6')" id="r6" style="visibility: hidden;width:100px;margin-top: 2px;">Remove</button></div></td></td>
+        </tr>
+
+        <tr id="row3">
+          <td><a href="pic7.html"><img src="pic/p7.png" height="500px" id="pic7"></a><br>
+            <div> <button onclick="addToCart('b7')"  id="b7">Add to Cart <br><div>270 AED</div></button>
+           <button onclick="removeFromCart('b7')" id="r7" style="visibility: hidden;width:100px;margin-top: 2px;">Remove</button></div></td></td>
+
+          <td><a href="pic8.html"><img src="pic/p8.png" height="500px" id="pic8"></a><br>
+          <div><button onclick="addToCart('b8')"  id="b8">Add to Cart <br><div>175 AED</div></button>
+            <button onclick="removeFromCart('b8')" id="r8" style="visibility: hidden;width:100px;margin-top: 2px;">Remove</button></div></td></td>
+
+          <td><a href="pic9.html"><img src="pic/p6.png" height="500px" id="pic9"></a><br>
+           <div> <button onclick="addToCart('b9')"  id="b9">Add to Cart <br><div>230AED</div></button>
+            <button onclick="removeFromCart('b9')" id="r9" style="visibility: hidden;width:100px;margin-top: 2px;">Remove</button></div></td></td>
+
+        </tr>
+        <tr id="row4">
+          <td><a href="pic10.html"><img src="pic/p5.png" height="500px" id="pic10"></a><br>
+            <div><button onclick="addToCart('b10')"  id="b10">Add to Cart <br><div>290 AED</div></button>
+            <button onclick="removeFromCart('b10')" id="r10" style="visibility: hidden;width:100px;margin-top: 2px;">Remove</button></div></td></td>
+
+          <td><a href="pic11.html"><img src="pic/p4.png" height="500px" id="pic11"></a><br>
+           <div> <button onclick="addToCart('b11')"  id="b11">Add to Cart <br><div>350 AED</div></button>
+           <button onclick="removeFromCart('b11')" id="r11" style="visibility: hidden;width:100px;margin-top: 2px;">Remove</button></div></td></td>
+
+            <td><a href="pic12.html"><img src="pic/p12.png" height="500px" id="pic12"></a><br>
+             <div><button onclick="addToCart('b12')"  id="b12">Add to Cart <br><div>340 AED</div></button>
+             <button onclick="removeFromCart('b12')" id="r12" style="visibility: hidden;width:100px;margin-top: 2px;">Remove</button></div></td></td>
+
+        </tr>
+      </table>
+      
+      <div class="footer">
+        &copy; La rose. All rights reserved. 2023.
+      </div>
+
+
+
+    </body>
+</html>
